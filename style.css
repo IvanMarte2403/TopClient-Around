@@ -22,6 +22,13 @@ body{
     border: solid #fff 1px;
     padding: 1em;
     background-color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.containerAround.hovered{
+    background: #fae228;
+
 }
 
 
@@ -41,10 +48,10 @@ body{
     
 }
 
-.containerIzq  img{
-    width: 40%;
-}
 
+.imgCardAround{
+    width: 60%;
+}
 .tituloServicios{
     height: 50%;
     width: 100%;
@@ -90,3 +97,46 @@ body{
 
 
 
+@media (max-width: 480px) {
+    .containerAround {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .containerIzq {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerDer {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgCardAround {
+        width: 30%;
+    }
+
+    .titulosServicios h1 {
+        font-size: 1.2em;
+    }
+
+    .contenidoServicios p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .botonContainer {
+        flex-direction: column;
+    }
+
+    .botonSubpaginas {
+        margin-top: 2em;
+    }
+
+    .botonSubpaginas a{
+        font-size: 20px;
+    }
+}
